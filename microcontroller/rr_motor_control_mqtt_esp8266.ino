@@ -30,8 +30,8 @@ const int SPEED_PWM = 1023;
 
 // Update these with values suitable for your network.
 
-// const char* ssid = "Steinmetz12";
-// const char* password = "Taj2005Australia";
+// const char* ssid = "SSID";
+// const char* password = "PW";
 const char* mqtt_server = "192.168.178.115";
 
 WiFiClient espClient;
@@ -49,9 +49,9 @@ void setup_wifi() {
 
   // connect to the "best" available network using WifiMulti lib
   WiFi.mode(WIFI_STA);
-  // wifiMulti.addAP("SteinmetzWerkstatt", "Taj2005Australia");
-  // wifiMulti.addAP("spielplatz", "c22iotPlay");
-  wifiMulti.addAP("Steinmetz12", "Taj2005Australia");
+  // wifiMulti.addAP("SSID1", "PW1");
+  // wifiMulti.addAP("SSID2", "PW2");
+  wifiMulti.addAP("SSID3", "PW3");
   wifiMulti.addAP("st_oberholz_bureau_2.4", "followthewhiteraBBit");
   // wifiMulti.addAP("berlin.freifunk.net");
 
